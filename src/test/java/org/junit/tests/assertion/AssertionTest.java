@@ -855,8 +855,8 @@ public class AssertionTest {
     
     @Test
     public void asserGreaterThan() {
-        int o1 = 42;
-        int o2 = 13;
-        Assert.assertGreaterThan(o1, o2, null);
+        int n1 = 42;
+        int n2 = 13;
+        Assert.assertGreaterThan(n1, n2, null);
     }
 }
