@@ -11,7 +11,6 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.fail;
 
 import java.io.IOException;
@@ -851,6 +850,13 @@ public class AssertionTest {
     public void assertGreaterThan() {
         Object o1 = new Object();
         Object o2 = new Object();
+        Assert.assertGreaterThan(o1, o2, null);
+    }
+    
+    @Test
+    public void asserGreaterThan() {
+        int o1 = 42;
+        int o2 = 13;
         Assert.assertGreaterThan(o1, o2, null);
     }
 }
